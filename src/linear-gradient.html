@@ -7,29 +7,47 @@
 		div {
 		  display: block;
 		  width: 50%;
+		  height: 80px;
 		  padding: 10px;
 		}
 		
 		#grad1 {
-		background-image: -moz-linear-gradient(rgb(26,198,204), rgb(102,88,204));
-		background-image: -o-linear-gradient(rgb(26,198,204), rgb(102,88,204));
-		background-image: -webkit-linear-gradient(rgb(26,198,204), rgb(102,88,204));
-		background-image: linear-gradient(rgb(26,198,204), rgb(102,88,204));
+			background-image: -moz-linear-gradient(rgb(26,198,204), rgb(102,88,204));
+			background-image: -o-linear-gradient(rgb(26,198,204), rgb(102,88,204));
+			background-image: -webkit-linear-gradient(rgb(26,198,204), rgb(102,88,204));
+			background-image: linear-gradient(rgb(26,198,204), to(rgb(102,88,204)));
 
 		}
 		
 		#grad2 {
-		background-image: -moz-linear-gradient(top left,rgba(26,198,204,0.5), rgba(102,88,204,0.53));
-		background-image: -o-linear-gradient(top left,rgba(26,198,204,0.5), rgba(102,88,204,0.53));
-		background-image: -webkit-linear-gradient(top left,rgba(26,198,204,0.5), rgba(102,88,204,0.53));
-		background-image: linear-gradient(top left,rgba(26,198,204,0.5), rgba(102,88,204,0.53));
+			background-image: -moz-linear-gradient(top left,rgba(26,198,204,0.5), rgba(102,88,204,0.53));
+			background-image: -o-linear-gradient(top left,rgba(26,198,204,0.5), rgba(102,88,204,0.53));
+			background-image: -webkit-linear-gradient(top left,rgba(26,198,204,0.5), rgba(102,88,204,0.53));
+			background-image: linear-gradient(top left,rgba(26,198,204,0.5), rgba(102,88,204,0.53));
 		}
 
 		#grad3 {
-		background-image: -moz-repeating-linear-gradient(180deg,rgb(26,198,204),rgb(26,198,204) 7%, rgb(100,100,100) 10%);
-		background-image: -webkit-repeating-linear-gradient(180deg,rgb(26,198,204),rgb(26,198,204) 7%, rgb(100,100,100) 10%);
-		background-image: -o-repeating-linear-gradient(180deg,rgb(26,198,204),rgb(26,198,204) 7%, rgb(100,100,100) 10%);
-		background-image: repeating-linear-gradient(180deg,rgb(26,198,204),rgb(26,198,204) 7%, rgb(100,100,100) 10%);
+			background: -moz-linear-gradient(top,  rgba(0,0,0,0.65) 0%, rgba(0,0,0,0) 100%);
+			background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(0,0,0,0.65)), color-stop(100%,rgba(0,0,0,0)));
+			background: -webkit-linear-gradient(top,  rgba(0,0,0,0.65) 0%,rgba(0,0,0,0) 100%);
+			background: -o-linear-gradient(top,  rgba(0,0,0,0.65) 0%,rgba(0,0,0,0) 100%);
+			background: -ms-linear-gradient(top,  rgba(0,0,0,0.65) 0%,rgba(0,0,0,0) 100%);
+			background: linear-gradient(top,  rgba(0,0,0,0.65) 0%,rgba(0,0,0,0) 100%);
+		}	
+		
+		#grad4 {
+			background-image: linear-gradient(bottom, rgb(195,188,224) 32%, rgb(76,35,209) 66%, rgb(148,0,89) 100%);
+			background-image: -o-linear-gradient(bottom, rgb(195,188,224) 32%, rgb(76,35,209) 66%, rgb(148,0,89) 100%);
+			background-image: -moz-linear-gradient(bottom, rgb(195,188,224) 32%, rgb(76,35,209) 66%, rgb(148,0,89) 100%);
+			background-image: -webkit-linear-gradient(bottom, rgb(195,188,224) 32%, rgb(76,35,209) 66%, rgb(148,0,89) 100%);
+			background-image: -ms-linear-gradient(bottom, rgb(195,188,224) 32%, rgb(76,35,209) 66%, rgb(148,0,89) 100%);
+	
+		}
+		
+		#grad5 {
+			background-color: #000000;	
+			background-image: -webkit-gradient(linear, 100% 0%, 0% 100%, from(transparent),color-stop(0.15, transparent),color-stop(0.15, rgba(255,255,255,1)),color-stop(0.50, rgba(255,255,255,1)),	color-stop(0.50, transparent),	color-stop(0.65, transparent),color-stop(0.65, rgba(255,255,255,1)),to(rgba(255,255,255,1)));
+			-webkit-background-size: 55px 55px;
 		}
 		</style>
 	</head>
@@ -40,20 +58,34 @@
 	  <h1>Examples</h1>
 	  <hr />
 	  <ol>
-	    <li></li>
-	    <div id="grad1">
+	    <li><div id="grad1">
 	      <h2>Simple Linear gradient </h2>
 	    </div>
-	    <hr />
-	    <li></li>
-	    <div id="grad2">
+	    <hr /></li>
+	    
+	    <li> <div id="grad2">
 	      <h2>Transparent Gradient</h2>
 	    </div>
 	    <hr />
-	    <li></li>	  
-	    <div id="grad3">
+	    </li>
+	    
+	    <li> <div id="grad3">
 	      <h2>repeating gradient</h2>
 	    </div>
+	    <hr />
+	    </li>	  
+	   
+	    
+	    <li><div id="grad4">
+	      <h2>repeating gradient</h2>
+	    </div>
+	    <hr /></li>	  
+	    
+	    <li>Zebra Pattern
+	    	<div id="grad5">
+	      
+	    </div>
+	    </li>
 	    </ol>
 	</body>
 </html>
