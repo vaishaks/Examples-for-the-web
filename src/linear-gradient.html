@@ -8,6 +8,8 @@
 		  display: block;
 		  width: 50%;
 		  height: 80px;
+		  border-radius: 10px;
+		  border-color: #000000;
 		  padding: 10px;
 		}
 		
@@ -23,32 +25,50 @@
 			background-image: -moz-linear-gradient(top left,rgba(26,198,204,0.5), rgba(102,88,204,0.53));
 			background-image: -o-linear-gradient(top left,rgba(26,198,204,0.5), rgba(102,88,204,0.53));
 			background-image: -webkit-linear-gradient(top left,rgba(26,198,204,0.5), rgba(102,88,204,0.53));
-			background-image: linear-gradient(top left,rgba(26,198,204,0.5), rgba(102,88,204,0.53));
+			background-image: linear-gradient(to top left,rgba(26,198,204,0.5), rgba(102,88,204,0.53));
 		}
 
 		#grad3 {
 			background: -moz-linear-gradient(top,  rgba(0,0,0,0.65) 0%, rgba(0,0,0,0) 100%);
-			background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(0,0,0,0.65)), color-stop(100%,rgba(0,0,0,0)));
 			background: -webkit-linear-gradient(top,  rgba(0,0,0,0.65) 0%,rgba(0,0,0,0) 100%);
 			background: -o-linear-gradient(top,  rgba(0,0,0,0.65) 0%,rgba(0,0,0,0) 100%);
 			background: -ms-linear-gradient(top,  rgba(0,0,0,0.65) 0%,rgba(0,0,0,0) 100%);
-			background: linear-gradient(top,  rgba(0,0,0,0.65) 0%,rgba(0,0,0,0) 100%);
+			background: linear-gradient(to top,  rgba(0,0,0,0.65) 0%,rgba(0,0,0,0) 100%);
 		}	
 		
 		#grad4 {
-			background-image: linear-gradient(bottom, rgb(195,188,224) 32%, rgb(76,35,209) 66%, rgb(148,0,89) 100%);
 			background-image: -o-linear-gradient(bottom, rgb(195,188,224) 32%, rgb(76,35,209) 66%, rgb(148,0,89) 100%);
 			background-image: -moz-linear-gradient(bottom, rgb(195,188,224) 32%, rgb(76,35,209) 66%, rgb(148,0,89) 100%);
 			background-image: -webkit-linear-gradient(bottom, rgb(195,188,224) 32%, rgb(76,35,209) 66%, rgb(148,0,89) 100%);
 			background-image: -ms-linear-gradient(bottom, rgb(195,188,224) 32%, rgb(76,35,209) 66%, rgb(148,0,89) 100%);
-	
+			background-image: linear-gradient(to bottom, rgb(195,188,224) 32%, rgb(76,35,209) 66%, rgb(148,0,89) 100%);
 		}
 		
 		#grad5 {
-			background-color: #000000;	
-			background-image: -webkit-gradient(linear, 100% 0%, 0% 100%, from(transparent),color-stop(0.15, transparent),color-stop(0.15, rgba(255,255,255,1)),color-stop(0.50, rgba(255,255,255,1)),	color-stop(0.50, transparent),	color-stop(0.65, transparent),color-stop(0.65, rgba(255,255,255,1)),to(rgba(255,255,255,1)));
-			-webkit-background-size: 55px 55px;
+			background-color: #000000;
+			background-image: -moz-linear-gradient(top right,transparent 10%, rgba(255,255,255, 1) 100%);
+			background-image: -webkit-linear-gradient(top left,transparent 10%, rgba(255,255,255,1) 100%);
+			background-image: -o-linear-gradient(top left,transparent 10%, rgba(255,255,255,1) 100%);
+			background-image: -ms-linear-gradient(top left,transparent 10%, rgba(255,255,255,1) 100%);
+			background-image: linear-gradient(to top left,transparent 10%, rgba(255,255,255,1) 100%);
+			background-size: 35px;	
 		}
+		
+		#grad6 {
+			background: -moz-linear-gradient(-45deg, #9c9c9c 22px, #d9ecff 22px, #d9ecff 24px, transparent 24px, transparent 67px, #d9ecff 67px, #d9ecff 69px, transparent 69px),
+						-moz-linear-gradient(225deg, #9C9C9C 22px, #d9ecff 22px, #d9ecff 24px, transparent 24px, transparent 67px, #d9ecff 67px, #d9ecff 69px, transparent 69px)0 64px;
+			background: -webkit-linear-gradient(-45deg, #9c9c9c 22px, #d9ecff 22px, #d9ecff 24px, transparent 24px, transparent 67px, #d9ecff 67px, #d9ecff 69px, transparent 69px),
+						-webkit-linear-gradient(225deg, #9C9C9C 22px, #d9ecff 22px, #d9ecff 24px, transparent 24px, transparent 67px, #d9ecff 67px, #d9ecff 69px, transparent 69px)0 64px;
+			background: -ms-linear-gradient(-45deg, #9c9c9c 22px, #d9ecff 22px, #d9ecff 24px, transparent 24px, transparent 67px, #d9ecff 67px, #d9ecff 69px, transparent 69px),
+						-ms-linear-gradient(225deg, #9C9C9C 22px, #d9ecff 22px, #d9ecff 24px, transparent 24px, transparent 67px, #d9ecff 67px, #d9ecff 69px, transparent 69px)0 64px;
+			background: -o-linear-gradient(-45deg, #9c9c9c 22px, #d9ecff 22px, #d9ecff 24px, transparent 24px, transparent 67px, #d9ecff 67px, #d9ecff 69px, transparent 69px),
+						-o-linear-gradient(225deg, #9C9C9C 22px, #d9ecff 22px, #d9ecff 24px, transparent 24px, transparent 67px, #d9ecff 67px, #d9ecff 69px, transparent 69px)0 64px;
+			background: linear-gradient(-45deg, #9c9c9c 22px, #d9ecff 22px, #d9ecff 24px, transparent 24px, transparent 67px, #d9ecff 67px, #d9ecff 69px, transparent 69px),
+						linear-gradient(225deg, #9C9C9C 22px, #d9ecff 22px, #d9ecff 24px, transparent 24px, transparent 67px, #d9ecff 67px, #d9ecff 69px, transparent 69px)0 64px;
+			background-color:#9c9c9c;
+			background-size: 64px 128px
+		}
+		
 		</style>
 	</head>
 	<body>
@@ -70,21 +90,22 @@
 	    </li>
 	    
 	    <li> <div id="grad3">
-	      <h2>repeating gradient</h2>
+	      <h2>Repeating gradient</h2>
 	    </div>
 	    <hr />
 	    </li>	  
 	   
 	    
 	    <li><div id="grad4">
-	      <h2>repeating gradient</h2>
+	      <h2>Repeating gradient</h2>
 	    </div>
 	    <hr /></li>	  
 	    
-	    <li>Zebra Pattern
-	    	<div id="grad5">
-	      
-	    </div>
+	    <li>
+	    	<div id="grad5"><h2>Transparent</h2></div><hr />
+	    </li>
+	    <li>
+	    	<div id="grad6"><h2>XY-degree</h2></div>
 	    </li>
 	    </ol>
 	</body>
