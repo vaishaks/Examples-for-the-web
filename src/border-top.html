@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<!-- Author: Vikash <vikashagrawa1990@gmail.com> -->
+<html>
+  <head>
+    <title>border-top: CSS Examples : MDN</title>
+    <style type="text/css">
+      .none {
+	          padding: 10px;
+	          width: 500px;
+	          border: none;
+      }
+      .dashed {
+	          padding: 10px;
+	          width: 500px;
+	          border-top: dashed;
+      }
+      .solid {
+	          padding: 10px;
+	          width: 500px;
+	          border-top: 5px solid;
+      }
+      .double {
+	          padding: 10px;
+	          width: 500px;
+	          border-top: 5px double;
+      }
+      .groove {
+	          padding: 10px;
+	          width: 500px;
+	          border-top: 10px groove;
+      }
+      .ridge {
+	          padding: 10px;
+	          width: 500px;
+	          border-top: 15px ridge #ff0000;
+      }
+      .inset {
+	          padding: 10px;
+	          width: 500px;
+              border-top: 15px inset #00ff00;
+      }
+      .outset {
+	          padding: 10px;
+	          width: 500px;
+	          border-top: 15px outset #0000ff;
+      }
+      #table {
+              font-family: verdana,arial,sans-serif;
+              font-size:14px;
+              width: 500px;
+              border: 6px solid #8B8378;
+              -moz-border-radius: 1px;
+      }
+	  div {
+	        width: 300px;
+	        height: 100px;
+	    	display: block; 
+	    	background-color: #CCCCCC;
+			border-top-color: #0000FF;
+			border-top-style: ridge;
+			border-top-width: 5px;
+		}
+		pre {
+			border-color: #000000;
+			border-style: dotted;
+			border-width: 1px;
+		}
+		#PreFirst {
+			border-top-color: #FF0000;
+			border-top-style: inset;
+			border-top-width: 5px;
+		}
+		blockquote {
+			border-top-color: #364E27;
+			border-top-style: dashed;
+			border-top-width: 5px;
+		}
+    </style>
+  </head>
+  
+  <body>
+    <h1>CSS Examples: border</h1>
+    
+    <h2>Examples</h2>
+    <hr />
+    <table id="table" cellspacing="10" cellpadding="10">
+      <tr>
+	<td class="none">This text is set to border property none. So no border is observed here
+	  <pre>
+	    .none {
+	          padding: 10px;
+	          width: 300px;
+	          border-top: none;
+	    }
+	  </pre>
+	</td>
+      </tr>
+      <tr>
+	<td class="dashed">This text has a dashed border.
+	  <pre>
+	    .dashed {
+	          padding: 10px;
+	          width: 300px;
+	          border-top: dashed;
+	    }
+	  </pre>
+	</td>
+      </tr>
+      <tr>
+	<td class="solid">This has a solid border and width of 5px
+	  <pre>
+	    .solid {
+	          padding: 10px;
+	          width: 300px;
+	          border-top: 5px solid;
+	    
+	    }
+	  </pre>
+	</td>
+      </tr>
+      <tr>
+	<td class="double">This text has a double border and its width is 5px
+	  <pre>
+	    .double {
+	          padding: 10px;
+	          width: 300px;
+	          border-top: 5px double;
+	    }
+	  </pre>
+	</td>
+      </tr>
+      <tr>
+	<td class="groove">This text has 10px groove border
+	  <pre>
+	    .groove {
+	          padding: 10px;
+	          width: 300px;
+	          border-top: 10px groove;
+	    }
+	  </pre>
+	</td>
+      </tr>
+      <tr>
+	<td class="ridge">This text has 20px ridge border with red color
+	  <pre>
+	    .ridge {
+	          padding: 10px;
+	          width: 300px;
+	          border-top: 15px ridge #ff00000;
+	    }
+	  </pre>
+	</td>
+      </tr>
+      <tr>
+	<td class="inset">This text has 20px inset border in green color
+	  <pre>
+	    .inset {
+	          padding: 10px;
+	          width: 300px;
+	          border-top: 15px inset #00ff00;
+	    }
+	  </pre>
+	</td>
+      </tr>
+      <tr>
+	<td class="outset">This text has 20px outset bordborder-color: reer in blue color
+	  <pre>
+	    .outset {
+	          padding: 10px;
+	          width: 300px;
+	          border-top: 15px outset #0000ff;
+	    }
+	  </pre>
+	</td>
+      </tr>
+    </table>
+    
+    <ul>
+    	<li>
+	    		<div>
+			    	<ul>
+			    		<li>border-top-color: blue</li>
+			    		<li>border-top-style: ridge</li>
+			    		<li>border-top-width: 5px</li>
+			    	</ul>
+			    </div>			   	
+	    	</li>
+	   
+	    	<li>
+	    		<pre id="PreFirst">border-top-color: red</pre>
+	    	</li>
+	   
+   			<li><blockquote>border-top</blockquote></li> 	
+    </ul>
+    
+    <hr />    
+</body>
+</html>
