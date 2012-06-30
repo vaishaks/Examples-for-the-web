@@ -3,7 +3,6 @@
 <html>
 	<head>
 		<title>Border-color</title>
-		
 		<style type="text/css">
 			div
             {
@@ -11,18 +10,38 @@
                 height: 100px;
             	display: block; 
             	background-color: #CCCCCC;
-        		border-color: #0000FF;
+    		}
+    		
+    		#DivFirst
+    		{
+				border-color: #0000FF;
+        		border-style: ridge;
+        		border-width: 5px;
+    		}
+    		
+    		#DivSecond
+    		{
+    			border-color: #FF0000;
         		border-style: ridge;
         		border-width: 5px;
     		}
     		
     		pre
     		{
-    			border-color: #FF0000;
+    			width: 300px;
+    			height: 50px;
+    		}
+	   		#PreFirst {
+	   			border-color: #FF0000;
         		border-style: inset;
         		border-width: 5px;
-    		}
-        	   
+	   		}
+	   		
+	   		#PreSecond {
+	   			border-color: #00FF00;
+        		border-style: inset;
+        		border-width: 5px;
+	   		}
 		</style>
 	</head>
 	
@@ -34,7 +53,7 @@
 	    
 	    <ol>
 	    	<li>
-	    		<div>
+	    		<div id="DivFirst">
 			    	<ul>
 			    		<li>border-color: blue</li>
 			    		<li>border-style: ridge</li>
@@ -42,16 +61,25 @@
 			    	</ul>
 			    </div>			   	
 	    	</li>
-	   
-	    	<li>
-	    		<pre>border-color: red</pre>
+	   		
+	   		<li>
+	    		<div id="DivSecond">
+			    	<ul>
+			    		<li>border-color: Red</li>
+			    		<li>border-style: ridge</li>
+			    		<li>border-width: 5px</li>
+			    	</ul>
+			    </div>			   	
 	    	</li>
-	   
-   			<li>
-   				
-   				
-   			</li> 	
-	    </ol>
+	    	
+	    	<li>
+	    		<pre id="PreFirst">border-color: red</pre>
+	    	</li>
+	   		
+	    	<li>
+	    		<pre id="PreSecond">border-color: Green</pre>
+	    	</li>
+   		</ol>
 	     
 	</body>
 </html>
